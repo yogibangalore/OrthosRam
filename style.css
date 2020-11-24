@@ -1,0 +1,471 @@
+/* my code starts here */
+.ortho-container{
+    content: '';    
+    /* background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: -1;
+  }
+    
+  .header-col-big{
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    padding-left: 111px;
+  }
+  
+  .header-col-small{
+    background-color: white;
+    width: 0%;
+  }
+  
+  .featured-col-big{
+    background-color: white;  
+    
+    width: 100%;
+  }
+  
+  .featured-col-big h1 {
+    font-family: 'Myriad Pro';
+    color: #000070;
+    font-size: 4rem;  
+    font-weight: bold;    
+    padding-left: 111px;
+    padding-top: 152px;  
+  }
+  
+  .featured-col-big h2 {
+    font-family: 'Myriad Pro';
+    font-size: 3rem;
+    line-height: 1rem;
+    color:black;
+    padding-left: 111px;
+    padding-top: 0px;                
+  }
+  
+  .featured-col-big p {
+    font-family: 'Myriad Pro';
+    font-size: 1rem;
+    font-weight: bold;
+    color:black;
+    padding-left: 111px;                
+  }
+  
+  .featured-btn1{
+    background-color:#fb9e09;
+    margin-top: 32px;
+    height: 40px;
+    width: 140px;
+    margin-left: 111px;
+    border-radius: 20px;   
+    color: white;     
+    font-weight: bold;
+    box-shadow: 5px 5px gray;
+    border-color: #fb9e09;
+  }
+  
+  .featured-btn2{
+    background-color: blue;
+    margin-top: 35px;
+    height: 40px;
+    width: 140px;
+    margin-left: 10px;
+    border-radius: 20px;               
+    color: white;     
+    font-weight: bold;
+    box-shadow: 5px 5px gray;
+    border-color: blue;
+    margin-bottom:  92px;
+  }
+  
+  .featured-col-small{
+    width: 0%;
+    background-color: white;
+  }
+  
+  .contact-col-zero{
+    background-color: white;  
+    height: 300px;  
+  }
+  
+  .contact-col-one{  
+    background-color: white;  
+    width: 33%;
+    margin: auto; 
+  }
+    
+  .contact-col-two{  
+    background-color: white;  
+    width: 33%; 
+      margin: auto;
+    
+  }
+  
+  .contact-col-three{
+    background-color: white;  
+    width: 33%; 
+    margin: auto;
+      
+  }
+  
+  .contact-col-four{
+    background-color: antiquewhite;  
+    
+  }
+  
+  .contact-col-five{
+    background-color: white;
+  }
+  
+  @media (min-width: 1100px){
+  
+  .header-col-big{
+    background-color: white;    
+    width: 96.8%;  
+  }
+  
+  .header-col-small{
+    background-color: white;
+    width: 3.2%;
+  }
+  
+  .featured-col-big{
+    width: 96.8%;
+  }
+  
+  .featured-col-small{  
+    width: 3.2%;
+  }
+  
+  .contact-col-zero{
+    background-color: white;  
+    height: 300px;
+    width: 33.6%;
+  }
+  
+  .contact-col-one{
+    background-color: white;  
+    /* padding-left: 27rem; */
+    height: 300px;
+    width: 16%;
+  }
+  
+  .contact-col-two{
+    background-color: white;    
+    height: 300px;
+    width: 16%;
+  }
+  
+  .contact-col-three{  
+    background-color: white;  
+    height: 300px;
+    width: 16%;
+  }
+  
+  .contact-col-four{
+    background-color: white;  
+    height: 300px;
+    width: 14.8%;
+    padding-bottom: 95px;
+  }
+  
+  .contact-col-five{
+    background-color: white;
+    height: 300px;  
+    width: 3.6%;
+  
+  }
+  
+  }
+
+  /* my code ends here */
+
+#menu-wrapper {
+    position: fixed;
+    width: 100%;
+    max-width: 50px;
+    background: #1290cf;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    z-index: 999;
+}
+
+.inner-btns {
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    pointer-events: all;
+}
+
+.inner-btns a.sidenav-trigger {
+    position: absolute;
+    height: 17px;
+    width: 30px;
+    display: inline-block;
+    right: 10px;
+    z-index: 9992;
+    top: 20px;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+div#three-btns-box {
+    position: absolute;
+    z-index: 9998;
+    height: 150px;
+    width: 100%;
+    bottom: 20px;
+    right: 0;
+}
+
+.inner-btns.active a.sidenav-trigger, .inner-btns #close-sidenav {
+    z-index: 9991;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.modal {
+    max-height: 100% !important;
+    overflow-y: hidden;
+}
+.modal {
+    background: transparent;
+    box-shadow: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+}
+
+@media only screen and (max-width: 992px){
+.modal {
+    width: 80%;
+}
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+#slide-nav-menu {
+    background: #1290cf;
+    padding: 60px 40px;
+    color: #fff;
+    max-width: 300px;
+}
+
+
+
+.sidenav.right-aligned {
+    right: 0;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+    left: auto;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.sidenav {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+@media only screen and (max-width: 992px){
+.sidenav>a {
+    padding: 0 16px;
+}
+}
+
+#slide-nav-menu {
+    background: #1290cf;
+    padding: 60px 40px;
+    color: #fff;
+    max-width: 300px;
+}
+
+.sidenav.right-aligned {
+    right: 0;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+    left: auto;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul#slide-nav-menu > li {
+    float: left;
+    width: 100%;
+}
+
+#slide-nav-menu > li {
+    margin: 10px 0;
+}
+
+ul:not(.browser-default)>li {
+    list-style-type: none;
+}
+
+.sidenav li {
+    float: none;
+    line-height: 48px;
+}
+
+ul#maindesktop-menu {
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+#maindesktop-menu {
+    display: none !important;
+}
+}
+
+.inner-btns a.sidenav-trigger {
+    position: absolute;
+    height: 17px;
+    width: 30px;
+    display: inline-block;
+    right: 10px;
+    z-index: 9992;
+    top: 20px;
+}
+
+.inner-btns a.sidenav-trigger:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 40%;
+    right: 0;
+    height: 2px;
+    background: #fff;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+}
+
+.inner-btns a.sidenav-trigger > i {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+}
+
+.inner-btns a.sidenav-trigger:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 72%;
+    background: #fff;
+    right: 0;
+    height: 2px;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+}
+
+.phone-icon {
+    width: 14px;
+    height: 14px;
+    background: url(or/phone-icon.png) no-repeat center center;
+	background-size:14px;
+}
+
+.myicon {
+    display: inline-block;
+}
+
+
+div#three-btns-box i {
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+div#three-btns-box > a {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+}
